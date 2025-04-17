@@ -30,6 +30,15 @@
             @media (max-width: 768px) {
               .image-grid {
                 grid-template-columns: 1fr; /* Stack images in a single column */
+                padding: 0 20px;
+              }
+            }
+            @media (max-width: 768px) {
+              .responsive-img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                padding: 0 20px;
               }
             }
           </style>
@@ -185,7 +194,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="image-grid responsive-img">
+                <div class="image-grid">
                     <!-- <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="../assets/img/highlights/eq2.jpg" alt="..."> -->
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="../assets/img/highlights/add2.jpg" alt="...">
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="../assets/img/highlights/add3.jpg" alt="...">
