@@ -17,12 +17,20 @@
             .image-grid {
               display: grid;
               grid-template-columns: repeat(2, 500px); /* Two columns with 500px width each */
-              grid-gap: 20px; /* Adds space between images */
-              justify-content: center; /* Centers the grid */
+              grid-gap: 20px;
+              justify-content: center;
             }
+          
             .image-grid img {
-              width: 100%; /* Ensures images fill their grid cells */
-              height: auto; /* Maintains aspect ratio */
+              width: 100%;
+              height: auto;
+            }
+          
+            /* ✅ Mobile-friendly adjustment */
+            @media (max-width: 768px) {
+              .image-grid {
+                grid-template-columns: 1fr; /* Stack images in a single column */
+              }
             }
           </style>
     </head>
